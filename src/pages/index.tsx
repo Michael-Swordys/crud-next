@@ -22,7 +22,9 @@ export default function Home() {
     <div className={`flex justify-center items-center h-screen
     bg-gradient-to-r from-blue-500 to-purple-500 text-white`}>
       <Layout titulo ="Cadastro Simples">
-      <Botao>Novo Cliente</Botao>
+        <div className={`flex justify-end`}>
+          <Botao className={`mb-4`}>Novo Cliente</Botao>
+        </div> 
       <Tabela clientes={clientes}
       clienteSelecionado = {clienteSelecionado}
       clienteExcluido = {clienteExcluido}
