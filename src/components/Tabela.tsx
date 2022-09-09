@@ -1,13 +1,12 @@
 import Cliente from "../core/Cliente"
 import { IconeDelete, IconeEdicao } from "./Icones"
 
-interface TabelaProps
-{
+interface TabelaProps {
+    
     clientes: Cliente[]
-    clienteSelecionado?: (Cliente:Cliente) => void
-    clienteExcluido?: (Cliente:Cliente) => void
+    clienteSelecionado?: (cliente: Cliente) => void
+    clienteExcluido?: (cliente: Cliente) => void
 }
-
 export default function Tabela(props: TabelaProps)
 {
     const exibirAcoes = props.clienteExcluido || props.clienteSelecionado
